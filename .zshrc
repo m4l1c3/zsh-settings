@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/m4l1c3/.oh-my-zsh"
+export ZSH="/home/jon/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -62,7 +62,7 @@ export ZSH="/Users/m4l1c3/.oh-my-zsh"
 # Add wisely, as too many plugins slow down shell startup.
 # only git previouslly, added post install
 plugins=(
-  sudo git history taskwarrior tmux tmuxinator zsh-autosuggestions
+  sudo git history taskwarrior tmux tmuxinator zsh-autosuggestions nvm npm node 
 )
 
 # User configuration
@@ -98,27 +98,27 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 #
 #
 
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history)
-POWERLEVEL9K_HISTORY_BACKGROUND='darkred'
-POWERLEVEL9K_HISTORY_FOREGROUND='white'
-POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='black'
-POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='white'
-POWERLEVEL9K_VCS_FOREGROUND='white'
-POWERLEVEL9K_DIR_BACKGROUND='darkred'
-POWERLEVEL9K_DIR_FOREGROUND='white'
-export GOPATH="/Users/m4l1c3/Dev/go:/Users/m4l1c3/Dev"
-export PATH=$PATH:$GOPATH/bin
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history)
+# POWERLEVEL9K_HISTORY_BACKGROUND='darkred'
+# POWERLEVEL9K_HISTORY_FOREGROUND='white'
+# POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='black'
+# POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='white'
+# POWERLEVEL9K_VCS_FOREGROUND='white'
+# POWERLEVEL9K_DIR_BACKGROUND='darkred'
+# POWERLEVEL9K_DIR_FOREGROUND='white'
+# export GOPATH="/Users/m4l1c3/Dev/go:/Users/m4l1c3/Dev"
+# export PATH=$PATH:$GOPATH/bin
 
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_MODE='awesome-patched'
-ZSH_THEME="powerlevel9k/powerlevel9k"
+# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_MODE='awesome-patched'
+ZSH_THEME="lukerandall"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # zsh tmux settings
 ZSH_TMUX_AUTOSTART='true'
 export TERM=screen-256color
 
 source $ZSH/oh-my-zsh.sh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
